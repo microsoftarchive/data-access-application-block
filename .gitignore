@@ -44,14 +44,6 @@ x64/
 *.svclog
 *.scc
 
-# Visual C++ cache files
-ipch/
-*.aps
-*.ncb
-*.opensdf
-*.sdf
-*.cachefile
-
 # Visual Studio profiler
 *.psess
 *.vsp
@@ -87,7 +79,6 @@ csx/
 AppPackages/
 
 # Others
-sql/
 *.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*

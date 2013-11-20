@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata schemaVersion="2">
+    <id>EnterpriseLibrary.Data.SqlCe</id>
+    <version>$Microsoft_Practices_EnterpriseLibrary_Data_SqlCe_Version$</version>
+    <title>Data Access Application Block SQL CE Data Provider (PRE-RELEASE)</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft; patterns-and-practices</owners>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>http://daab.codeplex.com</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The Data Access Application Block SQL CE Data Provider let developers use SQL CE databases in conjunction with the Data Access Application Block.</description>
+    <summary>The Data Access Application Block SQL CE Data Provider let developers use SQL CE databases in conjunction with the Data Access Application Block.</summary>
+    <tags>entlib entlib6 Enterprise Library data daab dab sql ce compact LOB futures OSS</tags>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Data" version="$Microsoft_Practices_EnterpriseLibrary_Data_Version$" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="NuGet\Readme.txt" target="" />
+    <file src="NuGet\tools\SharedCommon\install.ps1" target="tools" />
+    <file src="NuGet\tools\SharedCommon\Utils.psm1" target="tools" />
+  </files>
+</package>
