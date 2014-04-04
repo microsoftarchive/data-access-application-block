@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA79AA63-2EDF-4833-A1F6-581EAA5E3573}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Data.BVT</RootNamespace>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Data.BVT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\source\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessor\TestObjects\BaseClassWithGenericProperty.cs" />
+    <Compile Include="Accessor\TestObjects\CategoryBySale.cs" />
+    <Compile Include="Accessor\TestObjects\CategoryRowMapper.cs" />
+    <Compile Include="Accessor\TestObjects\ClassWithGenericProperty.cs" />
+    <Compile Include="Accessor\TestObjects\ClassWithIndexerProperty.cs" />
+    <Compile Include="Accessor\TestObjects\ClassWithStaticProperty.cs" />
+    <Compile Include="Accessor\TestObjects\Customer.cs" />
+    <Compile Include="Accessor\TestObjects\CustomerDetails.cs" />
+    <Compile Include="Accessor\TestObjects\CustomerDetailsResultSet.cs" />
+    <Compile Include="Accessor\TestObjects\CustomerDetailsRowMapper.cs" />
+    <Compile Include="Accessor\TestObjects\CustomerWithCalculatedField.cs" />
+    <Compile Include="Accessor\TestObjects\CustomerWithOrders.cs" />
+    <Compile Include="Accessor\TestObjects\CustomParameterMapper.cs" />
+    <Compile Include="Accessor\TestObjects\GetCategoryByIdParameterMapper.cs" />
+    <Compile Include="Accessor\TestObjects\GetCustomerByIdParameterMapper.cs" />
+    <Compile Include="Accessor\TestObjects\InheritedPersonWithHiddenProperties.cs" />
+    <Compile Include="Accessor\TestObjects\NotInheritedPerson.cs" />
+    <Compile Include="Accessor\TestObjects\Order.cs" />
+    <Compile Include="Accessor\TestObjects\Person.cs" />
+    <Compile Include="Accessor\TestObjects\PersonForGenericDB.cs" />
+    <Compile Include="Accessor\TestObjects\ProductSupplier.cs" />
+    <Compile Include="Accessor\TestObjects\ReadOnlyProperties.cs" />
+    <Compile Include="Accessor\TestObjects\Sale.cs" />
+    <Compile Include="Accessor\TestObjects\Test.cs" />
+    <Compile Include="Accessor\TestObjects\TopTenProduct.cs" />
+    <Compile Include="Accessor\TestObjects\TopTenProductResultSet.cs" />
+    <Compile Include="Accessor\TestObjects\TopTenProductRowMapper.cs" />
+    <Compile Include="Accessor\TestObjects\TopTenProductWithSalePrice.cs" />
+    <Compile Include="Async\AsyncExecuteNonQueryFixture.cs" />
+    <Compile Include="Async\AsyncExecuteReaderFixture.cs" />
+    <Compile Include="Async\AsyncExecuteScalarFixture.cs" />
+    <Compile Include="Async\AsyncExecuteXmlReaderFixture.cs" />
+    <Compile Include="Async\AsyncFixtureBase.cs" />
+    <Compile Include="Bootstrapping\DatabaseFactoryFixture.cs" />
+    <Compile Include="CommonDatabase\CommonFixture.cs" />
+    <Compile Include="CommonDatabase\DTCFixture.cs" />
+    <Compile Include="CommonDatabase\MultiThreadFixture.cs" />
+    <Compile Include="Configuration\FluentConfigurationFixtureBase.cs" />
+    <Compile Include="Configuration\FluentConfigurationResolveFixture.cs" />
+    <Compile Include="Configuration\InvalidFluentConfigurationFixture.cs" />
+    <Compile Include="Configuration\ValidFluentConfigurationFixture.cs" />
+    <Compile Include="DatabaseFixtures\ConnectionStringsValidConfigurationFixture.cs" />
+    <Compile Include="DatabaseFixtures\DatabaseValidConfigurationFixture.cs" />
+    <Compile Include="DatabaseFixtures\DatabaseWithMarsActiveFixture.cs" />
+    <Compile Include="DatabaseFixtures\MachineConfigurationFixture.cs" />
+    <Compile Include="DbAsyncState.cs" />
+    <Compile Include="EntLibFixtureBase.cs" />
+    <Compile Include="GenericDatabaseODBC\ExecuteDataSetFixture.cs" />
+    <Compile Include="GenericDatabaseODBC\ExecuteNonQueryFixture.cs" />
+    <Compile Include="GenericDatabaseODBC\ExecuteReaderFixture.cs" />
+    <Compile Include="GenericDatabaseODBC\ExecuteScalarFixture.cs" />
+    <Compile Include="GenericDatabaseODBC\LoadDataSetFixture.cs" />
+    <Compile Include="GenericDatabaseODBC\UpdateDataSetFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\ExecuteDataSetFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\ExecuteNonQueryFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\ExecuteReaderFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\ExecuteScalarFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\LoadDataSetFixture.cs" />
+    <Compile Include="GenericDatabaseOLEDB\UpdateDataSetFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\CommonFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\ExecuteDataSetFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\ExecuteNonQueryFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\ExecuteReaderFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\ExecuteScalarFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\LoadDataSetFixture.cs" />
+    <Compile Include="OracleDatabaseFixtures\UpdateDataSetFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\ExecuteDataSetFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\ExecuteNonQueryFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\ExecuteReaderFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\ExecuteScalarFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\LoadDataSetFixture.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\SqlCeDatabaseFixtureBase.cs" />
+    <Compile Include="SqlCeDatabaseFixtures\SqlCeConnectionStringFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\ExecuteDataSetFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\ExecuteNonQueryFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\ExecuteReaderFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\ExecuteScalarFixture.cs" />
+    <Compile Include="Accessor\GenericDatabaseAccessorFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\GetDataAdapterFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\LoadDataSetFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceHelper.cs" />
+    <Compile Include="Accessor\SProcAccessorFixture.cs" />
+    <Compile Include="Accessor\SqlStringAccessorFixture.cs" />
+    <Compile Include="SqlDatabaseFixtures\UpdateDataSetFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\Database.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\ConnectionStringsOnly.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\SqlProviderMappedToGenericDatabase.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\GenericDatabase.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\ModifiedDatabase.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\DatabaseSPAccessor.config" />
+    <EmbeddedResource Include="ConfigFiles\DatabaseFixture.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFiles\DatabaseSqlAccessor.config" />
+    <EmbeddedResource Include="ConfigFiles\DatabaseMarsFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\DatabaseValidFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\AsyncExecuteNonQueryFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\AsyncExecuteReaderFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\AsyncExecuteScalarFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\AsyncExecuteXmlReaderFixture.config" />
+    <EmbeddedResource Include="ConfigFiles\OlderTestsConfiguration.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFiles\GivenMachineConfiguration.config" />
+    <EmbeddedResource Include="ConfigFiles\DatabaseFactoryFixture.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="ConfigFiles\DAABAcceptanceTest1.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DatabaseSetupScripts\2.instnwnd.sql" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\2.Packages\ENTLIBTEST.pkb" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\2.Packages\ENTLIBTEST.pks" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\ADDCOUNTRY.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\ADDCOUNTRYLISTALL.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\ADDEMPLOYEEGETCOUNT.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\ADDEMPLOYEES.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\ADDSIMPLEDATATYPE.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\DELETECOUNTRY.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\DELETECOUNTRYLISTALL.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\DELETEEMPLOYEES.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETCUSTOMERBYID.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETCUSTOMEROUT.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETCUSTOMERSANDPRODUCTSVIEW.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETCUSTOMERSVIEW.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETPRODUCTNAME.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\GETPRODUCTSVIEW.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\UPDATECOUNTRY.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\UPDATECOUNTRYLISTALL.prc" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\UPDATEEMPLOYEES.prc" />
+    <None Include="DatabaseSetupScripts\3.TestSchemaAdditionsForNorthWind.sql" />
+    <None Include="DatabaseSetupScripts\4.TestDatabase.sql" />
+    <EmbeddedResource Include="ConfigFiles\OracleDatabaseFixture.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+    <Content Include="DatabaseSetupScripts\1.DataAccessQuickStarts.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\alldata.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\Country.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\Customers.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\Debits.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\Employees.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\Products.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\4.Data\truncate.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\3.SP\1.cursor.sql" />
+    <None Include="DatabaseSetupScripts\OracleDBScripts\3.SP\sp_GUIDTEST.prc" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\alldb.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\Country.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\Customers.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\Debits.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\Employees.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\Products.sql" />
+    <Content Include="DatabaseSetupScripts\OracleDBScripts\1.Table\SimpleDataType.sql" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestFiles\Customers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="TestFiles\Employees.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\executexml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Itemqty.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\itemqty2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Products.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ProductsOra.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\updateitems2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sample2.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestDb.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\CustomersOrders.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\CustomersOrders0.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Items.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\LDSctspparam.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\LDSspparam.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\updateitems.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\Src\Data\Data.csproj">
+      <Project>{d349b6d8-992f-443f-bb57-57e50dd98794}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\Src\SqlCe\Data.SqlCe.csproj">
+      <Project>{14dd9908-bb61-4402-810a-4c8a999163a9}</Project>
+      <Name>Data.SqlCe</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
