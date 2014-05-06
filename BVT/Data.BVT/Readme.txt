@@ -6,19 +6,21 @@ The configuration assumes that for SQL Server the database used will be (localdb
 
 To run the tests the following steps will need to be performed:
 
-1. Build the Data Access Application Block source code before building the BVT solution.
-2. Connect to (localdb)\v11.0 and run SQL scripts located in DatabaseSetupScripts:
-	a. 1.DataAccessQuickStarts.sql
-	b. 2.instnwnd.sql
-	c. 3.TestSchemaAdditionsForNorthWind.sql
-	d. 4.TestDatabase.sql
-3. Install Oracle and then run the SQL scripts located in DatabaseSetupScripts\OracleDBScripts:
-	a. 1.Table\alldb.sql
-	b. 2.Packages\ENTLIBTEST.pks
-	c. 2.Packages\ENTLIBTEST.pkb
-	d. 3.SP\1.cursor.sql
-	e. All other scripts located in 3.SP directory
-	f. 4.Data\alldata.sql
+A. Build the Data Access Application Block source code before building the BVT solution.
+
+B. Connect to (localdb)\v11.0 and run SQL scripts located in DatabaseSetupScripts:
+	1.DataAccessQuickStarts.sql
+	2.instnwnd.sql
+	3.TestSchemaAdditionsForNorthWind.sql
+	4.TestDatabase.sql
+
+C. Install Oracle and then run the SQL scripts located in DatabaseSetupScripts\OracleDBScripts:
+	1.Table\alldb.sql
+	2.Packages\ENTLIBTEST.pks
+	2.Packages\ENTLIBTEST.pkb
+	3.SP\1.cursor.sql
+	All other 18 scripts located in 3.SP directory
+	4.Data\alldata.sql
 
 The Oracle connection string is configured as follows:
 

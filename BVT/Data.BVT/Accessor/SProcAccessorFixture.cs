@@ -1,4 +1,6 @@
-锘縰sing Microsoft.Practices.EnterpriseLibrary.Data.Sql;
+// Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
+
+using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.Common;
 using System.Data;
@@ -44,7 +46,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
 
             var first = rowMapper.First();
 
-            Assert.AreEqual("C么te de Blaye", first.TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", first.TenMostExpensiveProducts);
         }
 
         [TestMethod]
@@ -57,7 +59,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
 
             var first = rowMapper.First();
 
-            Assert.AreEqual("C么te de Blaye", first.TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", first.TenMostExpensiveProducts);
             Assert.AreEqual(default(decimal), first.UnitPrice);
         }
 
@@ -141,7 +143,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
 
             var topTenProduct = results.First();
 
-            Assert.AreEqual("C么te de Blaye", topTenProduct.TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", topTenProduct.TenMostExpensiveProducts);
             Assert.AreEqual(263.50M, topTenProduct.UnitPrice);
         }
 
@@ -155,7 +157,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
             var results = accessor.Execute().ToList();
 
             Assert.AreEqual(2, results.Count);
-            Assert.AreEqual("C么te de Blaye", results[0].TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", results[0].TenMostExpensiveProducts);
             Assert.AreEqual(263.50M, results[0].UnitPrice);
         }
 
@@ -569,7 +571,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
             if (state.Exception != null)
                 Console.WriteLine(state.Exception);
             Assert.IsNull(state.Exception);
-            Assert.AreEqual("C么te de Blaye", first.TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", first.TenMostExpensiveProducts);
             Assert.AreEqual(263, (int)first.UnitPrice);
         }
 
@@ -661,7 +663,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
 
             var first = resultSet.First();
 
-            Assert.AreEqual("C么te de Blaye", first.TenMostExpensiveProducts);
+            Assert.AreEqual("C魌e de Blaye", first.TenMostExpensiveProducts);
             Assert.AreEqual(default(decimal), first.UnitPrice);
         }
 
@@ -766,3 +768,4 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.Accessor
         }
     }
 }
+

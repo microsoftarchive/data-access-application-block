@@ -1,3 +1,5 @@
+// Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
+
 using System;
 using System.Data.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -16,3 +18,4 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT.SqlCeDatabaseFixtures
         }
     }
 }
+

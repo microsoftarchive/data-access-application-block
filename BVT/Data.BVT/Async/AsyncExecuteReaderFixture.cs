@@ -1,4 +1,6 @@
-﻿using System;
+// Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
+
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -394,3 +396,4 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.BVT
         }
     }
 }
+
