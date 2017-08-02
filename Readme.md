@@ -1,8 +1,7 @@
-﻿DATA ACCESS APPLICATION BLOCK (DAAB) PRE-RELEASE
-http://daab.codeplex.com
+:warning: **This project is no longer under development. It is hosted here for historical reasons.**
 
-This is a pre-release version. It is meant for developers to try out new features or bug fixes ahead of an official release. 
-We strongly urge you to only use official builds for production. The latest official release is available at http://msdn.microsoft.com/entlib and via the NuGet official feed (http://nuget.org).
+# DATA ACCESS APPLICATION BLOCK (DAAB) PRE-RELEASE
+https://github.com/MicrosoftArchive/enterprise-library
 
 Summary: The Data Access Application Block abstracts the actual database you are using, and exposes a collection of methods that make it easy to access that database and to perform common tasks. The block is designed to simplify the task of calling stored procedures, but it also provides full support for the use of parameterized SQL statements.
 
